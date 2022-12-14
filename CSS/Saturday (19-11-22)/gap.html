@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+
+            /*Gap row & column*/
+            /* gap: 50px; */
+            /* row-gap: 100px; */
+            /* column-gap: 50px; */
+            /*row-gap column-gap*/
+            gap: 50px 100px; 
+
+            border: 2px solid rgb(168, 168, 168);
+            height: 500px;
+            width: 500px;
+        }
+
+        .items{
+            background-color: #d4a373;
+            width: 75px;
+            height: 75px;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">Item 1</div>
+        <div class="items">Item 2</div>
+        <div class="items">Item 3</div>
+        <div class="items">Item 4</div>
+        <div class="items">Item 5</div>
+        <div class="items">Item 6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    max-width: 1440px;
+}
+
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    height: 60px;
+}
+
+img{
+    width: 60px;
+    margin-left: 80px;
+}
+
+.line{
+    background-color: #ffff;
+    width: 0.5px;
+    height: 35px;
+    margin: 0 50px;
+}
+.grow-list{
+    flex: 1;
+}
+.grow-list ul{
+    display: flex;
+    align-items: center;
+ 
+}
+
+ul li{
+    color: #ffff;
+    list-style: none;
+    margin-right: 50px; 
+    font-weight: 500;
+    font-size: 13px;
+}
+
+ul li:first-child::after{
+    content: "\2304";
+    font-size: 14px;
+    line-height: 15px;
+    padding-left: 10px;
+}
+
+.button-small{
+    padding: 5px 20px;
+    margin-right: 80px;
+    background-color: #BA0CC5;
+    color: #ffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Hero-section */
+
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+
+    background-image: url(./assets/bg.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    width: 100% 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+h1{
+    color: #ffff;
+    font-weight: 600;
+    font-size: 60px;
+    width: 50%;
+    text-align: center;
+}
+
+p{
+    color: #ffff;
+}
+
+.button-large{
+    padding: 12px 20px;
+    margin-top: 30px;
+    background-color: #BA0CC5;
+    color: #ffff;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+

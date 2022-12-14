@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-wrap</title>
+    <style>
+        .container{
+           
+            display: flex;
+             /* If there is limited space then item will shift to next line i.e top to bottom */
+            /* flex-wrap: wrap; */
+
+            /* Default or no change */
+            /* flex-wrap: nowrap; */
+
+            /*Reverse flex items bottom to top*/
+            /* flex-wrap: wrap-reverse; */
+
+            border: 2px solid rgb(168, 168, 168);
+            width: 500px;
+            height: 500px;
+
+        }
+
+        .items{
+            background-color: #d4a373;
+            width: 75px;
+            height: 75px;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">Item 1</div>
+        <div class="items">Item 2</div>
+        <div class="items">Item 3</div>
+        <div class="items">Item 4</div>
+        <div class="items">Item 5</div>
+        <div class="items">Item 6</div>
+        <div class="items">Item 7</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-items</title>
+    <style>
+        .container{
+            display: flex;
+
+            /* align-items: flex-start; */
+
+            align-items: flex-end;
+
+            /* align-items: center; */
+
+            /* Default */
+            /* align-items: stretch; */
+
+            /* align-items: baseline; */
+
+
+            border: 2px solid rgb(168, 168, 168);
+            height: 500px;
+        }
+
+        .items{
+            background-color: #d4a373;
+            width: 75px;
+            height: 75px;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        #style{
+            padding-top: 50px;
+        }
+
+        .style2{
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">Item 1</div>
+        <div class="items" id="style">Item 2</div>
+        <div class="items style2">Item 3</div>
+        <div class="items">Item 4</div>
+    </div>
+</body>
+</html>

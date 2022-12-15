@@ -1,0 +1,12 @@
+# CSS Topic
+- Adjacent sibling
+- After pseudo
+- And selector
+- Before pseudo
+- Child selector
+- Class & id selector
+- Combined selector
+- General sibling
+- Individual selector
+- Inside element
+- Universal selector 

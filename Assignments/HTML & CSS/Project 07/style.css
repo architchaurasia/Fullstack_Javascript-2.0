@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: #151515;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 100px 0;color: #fff;
+}
+
+img{
+    width: 120px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

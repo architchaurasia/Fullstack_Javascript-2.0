@@ -18,7 +18,7 @@ _**Bold & Italic**_
 
 [Hover on me](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Howto/Markdown_in_MDN "Tool tip")
 
-<!-- Use this ! before [] -->
+<!-- Use this ! before [] for image -->
 ![Alt text](https://d33wubrfki0l68.cloudfront.net/f1f475a6fda1c2c4be4cac04033db5c3293032b4/513a4/assets/images/markdown-mark-white.svg)
 
 Tables

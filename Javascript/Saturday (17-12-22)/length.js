@@ -1,4 +1,4 @@
-let name = ['Aman', 'Anurag', 'Hitesh sir', 'Archit'];
+let name = ['Aman', 'Anurag sir', 'Hitesh sir', 'Archit'];
 
 console.log(name.length);
 

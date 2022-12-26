@@ -6,3 +6,10 @@ for (let Archit of fruit){
 }
 
 console.log(upperFruit);
+
+//#2
+
+let name = ['Aryan', 'Aman', 'Prateek', 'Deepak'];
+for(let presentStudents of name){
+    console.log(presentStudents);
+}

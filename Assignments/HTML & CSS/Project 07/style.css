@@ -7,6 +7,7 @@
 
 body{
     background-color: #151515;
+    overflow-x: hidden;
 }
 
 
@@ -29,7 +30,7 @@ ul {
 
 ul li{
     list-style: none;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .nav_right{
@@ -59,3 +60,86 @@ li, p{
     color: rgb(207, 207, 207);
 }
 
+
+/* Main page */
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Left side */
+
+.main > .leftside > .heading{
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    left: 100px;
+    width: 750px;
+    font-weight: 300;
+}
+
+.main > .leftside > .heading > span > span{
+    font-weight: 500;
+    color: #F637EC;
+}
+
+.main > .leftside > .heading > p{
+    font-size: 12px;
+    margin-top: 20px;
+    width: 400px;
+    word-spacing: 1px;
+    color: rgb(207, 207, 207);
+
+}
+
+.getstarted{
+    display: flex;
+    align-items: center;
+    margin-top: 300px;
+    color: #fff;
+}
+
+.getstarted > .btnpink{
+    width: 40px;
+    position: absolute;
+}
+
+.getstarted > span{
+    margin-left: 22px;
+    font-weight: 400;
+}
+
+.rightarrow{
+    margin-left: 10px;
+    width: 40px;
+}
+
+
+
+/* Right side */
+
+
+.frontcards{
+    width: 750px;
+    position: absolute;
+    right: -170px;
+}
+
+
+.backcards{
+    width: 750px;
+    position: relative;
+    bottom: 60px;
+    left: 110px;
+    z-index: -1;
+}
+
+
+
+
+/* section 2 */
+/* .section2{
+    background-color: #292929;
+    height: 300px;
+} */

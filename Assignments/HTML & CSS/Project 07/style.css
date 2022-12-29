@@ -10,6 +10,7 @@ body{
 }
 
 
+/* Navbar */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -17,8 +18,9 @@ body{
     margin: 15px 100px 0;color: #fff;
 }
 
-img{
-    width: 120px;
+
+.logo{
+    width: 110px;
 }
 
 ul {
@@ -35,3 +37,25 @@ ul li{
     justify-content: center;
     align-items: center;
 }
+
+.eng{
+    display: flex;
+}
+
+.dropdown {
+    width: 7px;
+    margin-left: 14px;
+}
+
+.button_pink{
+    position: relative;
+    z-index: -1;
+    left: 16px;
+    width: 42px;
+}
+
+li, p{
+    font-size: 14px;
+    color: rgb(207, 207, 207);
+}
+

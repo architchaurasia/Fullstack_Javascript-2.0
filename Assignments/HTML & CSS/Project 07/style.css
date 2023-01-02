@@ -85,9 +85,9 @@ li, p{
 }
 
 .main > .leftside > .heading > p{
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 30px;
-    width: 450px;
+    width: 550px;
     word-spacing: 1px;
     color: rgb(207, 207, 207);
 }
@@ -95,14 +95,15 @@ li, p{
 .getstarted{
     display: flex;
     align-items: center;
-    margin-top: 380px;
+    margin-top: 400px;
     color: #fff;
     width: 520px;
 }
 
 .getstarted > .btnpink{
-    width: 50px;
+    width: 60px;
     position: absolute;
+    z-index: -1;
 }
 
 .getstarted > span{
@@ -113,7 +114,7 @@ li, p{
 
 .rightarrow{
     margin-left: 10px;
-    width: 40px;
+    width: 55px;
 }
 
 .plus{
@@ -127,25 +128,27 @@ li, p{
 }
 
 .lgtext{
-    font-size: 35px;
+    font-size: 45px;
 }
 
 .purple{
     color: #F637EC;
-    font-size: 30px;
+    font-size: 38px;
+    margin-left: -10px;
+    font-weight: 500;
 }
 
 .shorttext{
-    width: 80px;
-    margin-left: 10px;
-    font-size: 14px;
+    width: 100px;
+    margin-left: 15px;
+    font-size: 18px;
 }
 
 .line{
     height: 50px;
     width: 1px;
     background: linear-gradient(0deg, rgba(21, 21, 21, 1) 0%, rgba(255,255,255,1) 50%, rgba(21, 21, 21, 1) 100%);   
-    margin: 0 15px;
+    margin: 0 45px;
 }
 
 
@@ -387,6 +390,7 @@ li, p{
 .section6{
     display: flex;
     flex-direction: column;
+    height: 600px;
 }
 
 .img2{
@@ -409,37 +413,53 @@ li, p{
     position: relative;
     bottom: 1000px;
     left: 300px;
-    font-size: 60px;
-    width: 800px;
+    font-size: 70px;
+    width: 1000px;
     text-align: center;
     font-weight: 500;
+    color: #fff;
 }   
 
 .section6 > p > span{
     color: #1E1F24;
 }
 
-.section6 > .getstarted{
+.section6 > .getstarted_sec6{
     display: flex;
     align-items: center;
     margin-top: 380px;
     color: #fff;
     width: 520px;
     position: absolute;
+    left: 700px;
+    margin-top: 400px;
 }
 
-.getstarted > .btnpink{
+.getstarted_sec6 > .btnpink_sec6{
     width: 45px;
     position: absolute;
 }
 
-.getstarted > span{
+.getstarted_sec6 > span{
     margin-left: 30px;
     font-weight: 400;
     font-size: 20px;
 }
 
-.rightarrow{
+.rightarrow_sec6{
     margin-left: 10px;
-    width: 40px;
+    width: 55px;
+}
+
+/* section7 */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:  100px;
+    width: 60%;
+} 
+
+.footer > .footer_logo{
+    width: 110px;
 }

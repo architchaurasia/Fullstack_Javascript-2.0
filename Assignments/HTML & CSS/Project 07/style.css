@@ -71,11 +71,11 @@ li, p{
 /* Left side */
 
 .main > .leftside > .heading{
-    font-size: 60px;
+    font-size: 80px;
     color: #fff;
     position: absolute;
     left: 100px;
-    width: 750px;
+    width: 950px;
     font-weight: 300;
 }
 
@@ -85,9 +85,9 @@ li, p{
 }
 
 .main > .leftside > .heading > p{
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 30px;
-    width: 400px;
+    width: 450px;
     word-spacing: 1px;
     color: rgb(207, 207, 207);
 }
@@ -95,19 +95,20 @@ li, p{
 .getstarted{
     display: flex;
     align-items: center;
-    margin-top: 320px;
+    margin-top: 380px;
     color: #fff;
+    width: 520px;
 }
 
 .getstarted > .btnpink{
-    width: 45px;
+    width: 50px;
     position: absolute;
 }
 
 .getstarted > span{
-    margin-left: 25px;
+    margin-left: 30px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .rightarrow{
@@ -152,17 +153,17 @@ li, p{
 
 
 .frontcards{
-    width: 750px;
+    width: 780px;
     position: absolute;
-    right: -170px;
+    right: -175px;
 }
 
 
 .backcards{
-    width: 750px;
+    width: 780px;
     position: relative;
     bottom: 60px;
-    left: 110px;
+    left: 100px;
     z-index: -1;
 }
 
@@ -380,4 +381,65 @@ li, p{
     border-radius: 50%;
     background-color: #484347;
     margin-left: 8px;
+}
+
+/* section 6 */
+.section6{
+    display: flex;
+    flex-direction: column;
+}
+
+.img2{
+    position: absolute;
+    width: 1500px;
+}
+
+.diamond_right{
+    position: absolute;
+}
+
+.diamond_left{
+    position: relative;
+    bottom: 530px;
+    left: 935px;
+    width: 565px;
+}
+
+.section6 > p{
+    position: relative;
+    bottom: 1000px;
+    left: 300px;
+    font-size: 60px;
+    width: 800px;
+    text-align: center;
+    font-weight: 500;
+}   
+
+.section6 > p > span{
+    color: #1E1F24;
+}
+
+.section6 > .getstarted{
+    display: flex;
+    align-items: center;
+    margin-top: 380px;
+    color: #fff;
+    width: 520px;
+    position: absolute;
+}
+
+.getstarted > .btnpink{
+    width: 45px;
+    position: absolute;
+}
+
+.getstarted > span{
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.rightarrow{
+    margin-left: 10px;
+    width: 40px;
 }

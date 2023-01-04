@@ -41,7 +41,7 @@ body{
 /* Main */
 .main{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0 100px;
 }
 
@@ -72,3 +72,94 @@ body{
     font-size: 18px;
     font-weight: 500;
 }
+
+.main > .left > .button_grp > .grey_btn{
+    padding: 14px 25px;
+    color: #fff;
+    background-color: #111010;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.main > .right > img{
+    margin-bottom: 80px;
+}
+
+/* Info bar */
+.info_bar{
+    background-color: #1D1C1C;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 250px;
+}
+
+/* Service */
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.service > h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.service > p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 500px;
+    text-align: center;
+    color: #9B9A9A;
+    margin: 20px 0;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    margin-top: 50px;
+}
+
+.card1, .card2, .card3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    border: 1px solid #9B9A9A;
+    border-radius: 20px;
+}
+
+.card2{
+    margin: 0 50px;
+    background-color: #111010;
+    margin-bottom: 100px;
+    box-shadow: 0 10px  40px rgb(168, 168, 168);
+    border: none;
+}
+
+.card2 > h3{
+    color: #fff;
+}
+
+.para_card{
+    width: 340px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #5C5B5B;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.head_card{
+    font-size: 28px;
+    font-weight: 600;
+    margin: 25px 0;
+}
+

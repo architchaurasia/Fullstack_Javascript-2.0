@@ -246,10 +246,79 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 50px 100px;
 }
 
-
-
-.pricing > .arrow{
-    position: relative;
+.pricing > h2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 50px;
+    width: 800px;
+    text-align: center;
 }
+
+.pricing > .left_arrow{
+    position: absolute;
+    left: 150px;
+    margin-bottom: 350px;
+    width: 55px;
+}
+
+.pricing > .right_arrow{
+    position: absolute;
+    right: 150px;
+    margin-bottom: 350px;
+    width: 55px;
+}
+
+.pricing > .cards {
+    margin-top: 100px;
+}
+
+.pricing > .cards > .cards1{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border: 1px solid #9B9A9A;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.card_heading{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.card_dollar{
+    font-size: 50px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.card_month{
+    font-size: 28px;
+    color: #8E8D8D;
+}
+
+.card_sentence{
+    font-weight: 600;
+}
+
+.card_line{
+    background-color: #E7E7E7;
+    height: 2px;
+    width: auto;
+}
+
+.check > span{
+    margin-left: 10px;
+}
+

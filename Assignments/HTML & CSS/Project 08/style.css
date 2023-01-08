@@ -260,30 +260,32 @@ body{
 .pricing > .left_arrow{
     position: absolute;
     left: 150px;
-    margin-bottom: 350px;
+    margin-bottom: 650px;
     width: 55px;
 }
 
 .pricing > .right_arrow{
     position: absolute;
     right: 150px;
-    margin-bottom: 350px;
+    margin-bottom: 650px;
     width: 55px;
 }
 
-.pricing > .cards {
+.pricing > .cards_pricing {
+    display: flex;
+    justify-content: space-between;
     margin-top: 100px;
 }
 
-.pricing > .cards > .cards1{
+.cards1, .cards3{
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px;
-    border: 1px solid #9B9A9A;
-    border-radius: 20px;
-    width: 400px;
+    padding: 20px 30px;
+    border-radius: 30px;
+    width: 350px;
+    margin-left: 30px;
 }
 
 .card_heading{
@@ -301,6 +303,8 @@ body{
     display: flex;
     align-items: center;
     padding: 7px 0;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .card_month{
@@ -309,6 +313,7 @@ body{
 }
 
 .card_sentence{
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -316,9 +321,87 @@ body{
     background-color: #E7E7E7;
     height: 2px;
     width: auto;
+    margin: 20px 0;
 }
 
 .check > span{
     margin-left: 10px;
 }
 
+.card_btn{
+    background-color: #0C8BFD;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+/* blue-card */
+.cards2{
+    background-color: #0C8BFD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
+    border-radius: 30px;
+    width: 350px;
+    margin-left: 30px;
+}
+
+.cards2 > .card_heading{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.cards2 > .card_dollar{
+    font-size: 50px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.cards2 > .check{
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.cards2 > .card_dollar > .card_month{
+    font-size: 28px;
+    color: #81C3FE;
+}
+
+.cards2 > .card_sentence{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.cards2 > .card_line{
+    background-color: #81C3FE;
+    height: 2px;
+    width: auto;
+    margin: 20px 0;
+}
+
+.cards2 > .check > span{
+    margin-left: 10px;
+}
+
+.cards2 > .card_btn{
+    background-color: #fff;
+    color: #0C8BFD;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    margin: 20px 0;
+    font-weight: 500;
+}

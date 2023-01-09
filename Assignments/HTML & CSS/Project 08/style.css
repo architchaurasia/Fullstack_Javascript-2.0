@@ -246,7 +246,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 100px;
+    padding: 80px 100px;
 }
 
 .pricing > h2{
@@ -313,8 +313,9 @@ body{
 }
 
 .card_sentence{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
+    width: 250px;
 }
 
 .card_line{
@@ -379,16 +380,17 @@ body{
 }
 
 .cards2 > .card_sentence{
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 400;
     color: #fff;
+    width: 220px;
 }
 
 .cards2 > .card_line{
     background-color: #81C3FE;
     height: 2px;
     width: auto;
-    margin: 20px 0;
+    margin: 20px 0 10px;
 }
 
 .cards2 > .check > span{

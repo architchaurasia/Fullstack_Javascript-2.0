@@ -407,3 +407,41 @@ body{
     margin: 20px 0 0 0;
     font-weight: 500;
 }
+
+/* Customers */
+.customer {
+    padding: 100px 0 100px 100px;
+    background-color: #fff;
+}
+
+.customer_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer_heading > h2{
+    font-weight: 400;
+    font-size: 48px;
+    width: 400px;
+}
+
+.customer_heading > p{
+    font-weight: 500;
+    width: 500px;
+    font-size: 18px;
+    margin-right: 100px;
+    color: #949393;
+}
+
+.cards_customer{
+    display: flex;
+    margin-top: 80px;
+}
+
+.cards_customer1{
+    background-color: #111010;
+    border-radius: 30px;
+    color: #fff;
+    padding: 30px;
+}

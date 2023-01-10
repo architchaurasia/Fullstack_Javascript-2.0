@@ -6,6 +6,9 @@ let basket = {
     //we used methods below i.e (object inside object)
     refrigerator: function() {
         return this.fruit;  //this refer object which we target inside basket
+    },
+    refrigerator: function() {
+        return this.fruit;  //this will not work with arrow function
     }
 }
 

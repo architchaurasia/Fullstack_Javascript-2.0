@@ -412,6 +412,7 @@ body{
 .customer {
     padding: 100px 0 100px 100px;
     background-color: #fff;
+    
 }
 
 .customer_heading{
@@ -437,8 +438,9 @@ body{
 .cards_customer{
     display: flex;
     margin-top: 80px;
-    overflow: hidden;
+    overflow-x: scroll;
     gap: 30px;
+    padding-bottom: 80px;
 }
 
 .cards_customer1{
@@ -446,8 +448,6 @@ body{
     border-radius: 30px;
     border: 1px solid #C3C2C2;
     padding: 30px;
-    /* width: 3000px; */
-    /* margin-right: 30px; */
 }
 
 .vector1{
@@ -474,4 +474,65 @@ body{
 .cards_customer1:hover{
     background-color: #111010;
     color: #fff;
+}
+
+/* Scroll-bar */
+.cards_customer::-webkit-scrollbar {
+    width: 100px;
+    height: 10px;
+  }
+  
+.cards_customer::-webkit-scrollbar-track {
+    background: #F3F3F3;
+    border-radius: 100px 0 0 100px;
+    margin-block: 0.5em;
+  }
+  
+.cards_customer::-webkit-scrollbar-thumb {
+    background: #0C8BFD;
+    border-radius: 100px;
+  }
+
+  .cards_customer::-webkit-scrollbar-thumb:hover {
+    background: #0059a7;
+  }
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+    align-items: center;
+}
+
+.footer > h2{
+    font-weight: 500;
+    font-size: 48px;
+    color: #fff;
+    width: 900px;
+    text-align: center;
+}
+
+.footer_card{
+    padding: 20px 10px;
+    background-color: #292828;
+    border-radius: 20px;
+}
+
+.footer_card > input{
+    background-color: #3E3D3D;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+
+.footer_list{
+    display: flex;
+    color: #fff;
+}
+
+.footer_logo{
+    width: 30px;
 }

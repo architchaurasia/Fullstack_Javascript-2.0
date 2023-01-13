@@ -29,6 +29,11 @@ body{
     font-weight: 500;
 }
 
+.navbar > ul > li:hover{
+    color: #fff;
+    cursor:pointer;
+}
+
 .navbar > button{
     padding: 12px 35px;
     color: #fff;
@@ -36,6 +41,12 @@ body{
     border-radius: 50px;
     font-size: 20px;
     font-weight: 500;
+    border: none;
+}
+
+.navbar > button:hover{
+    box-shadow: 1px 1px 25px #0059a7;
+    cursor: pointer;
 }
 
 /* Main */
@@ -71,6 +82,12 @@ body{
     border-radius: 50px;
     font-size: 18px;
     font-weight: 500;
+    border: none;
+}
+
+.main > .left > .button_grp > .blue_btn:hover{
+    box-shadow: 1px 1px 25px #0059a7;
+    cursor: pointer;
 }
 
 .main > .left > .button_grp > .grey_btn{
@@ -82,6 +99,12 @@ body{
     font-weight: 500;
     border: 1px solid white;
     margin-left: 20px;
+}
+
+.main > .left > .button_grp > .grey_btn:hover{
+    background-color: #fff;
+    color: #111010;
+    cursor: pointer;
 }
 
 .main > .right > img{

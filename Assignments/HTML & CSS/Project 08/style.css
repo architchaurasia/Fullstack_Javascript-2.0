@@ -514,25 +514,71 @@ body{
 }
 
 .footer_card{
-    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
     background-color: #292828;
-    border-radius: 20px;
+    border-radius: 30px; 
+    margin: 60px 0;
 }
 
 .footer_card > input{
     background-color: #3E3D3D;
     border: none;
-    width: 200px;
-    height: 50px;
+    width: 270px;
+    height: 60px;
     border-radius: 50px;
-    
+
+}
+
+.footer_card > input::placeholder{
+    padding: 20px;
+    color: #888787;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer_card > button{
+    padding: 16px 34px;
+    background-color: #0C8BFD;
+    color: #fff;
+    border: none;
+    border-radius: 50px; 
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.line1, .line2{
+    height: 2px;
+    width: 1030px;
+    background-color: #3E3D3D;
 }
 
 .footer_list{
     display: flex;
-    color: #fff;
+    gap: 160px;
+    color: #DADADA;
+    margin: 60px 0;
 }
 
-.footer_logo{
-    width: 30px;
+.footer_list > ul{
+    list-style: none;
+}
+
+.footer_list > ul > li{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.footer_list > ul > li:first-child{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer > .footer_logo{
+    width: 120px;
+    margin: 30px 0;
+    margin-right: 900px;
 }

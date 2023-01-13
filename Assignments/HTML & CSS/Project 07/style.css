@@ -75,6 +75,10 @@ li:hover{
 
 /* Left side */
 
+.main > .leftside{
+    padding-left: 150px;
+}
+
 .main > .leftside > .heading{
     font-size: 80px;
     color: #fff;
@@ -126,6 +130,7 @@ li:hover{
     margin-top: 65px;
     display: flex;
     align-items: center;
+    position: absolute;
 }
 
 .plus > span {
@@ -171,7 +176,7 @@ li:hover{
     width: 780px;
     position: relative;
     bottom: 60px;
-    left: 100px;
+    left: -50px;
     z-index: -1;
 }
 
@@ -400,7 +405,8 @@ li:hover{
 
 .img2{
     position: absolute;
-    width: 1500px;
+    width: 1400px;
+    height: 500px;
 }
 
 .diamond_right{
@@ -409,15 +415,15 @@ li:hover{
 
 .diamond_left{
     position: relative;
-    bottom: 530px;
-    left: 935px;
-    width: 565px;
+    bottom:480px;
+    left: 850px;
+    width: 500px;
 }
 
 .section6 > p{
     position: relative;
-    bottom: 1000px;
-    left: 300px;
+    bottom: 900px;
+    left: 200px;
     font-size: 70px;
     width: 1000px;
     text-align: center;
@@ -436,8 +442,8 @@ li:hover{
     color: #fff;
     width: 520px;
     position: absolute;
-    left: 700px;
-    margin-top: 400px;
+    left: 600px;
+    margin-top: 350px;
 }
 
 .getstarted_sec6 > .btnpink_sec6{

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 100px;
+}
+
+.navbar > .list_nav{
+    display: flex;
+    align-items: center;
+}
+
+.navbar > .list_nav > ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar > .list_nav > ul > li:first-child{
+    margin-left: 100px;
+}
+
+.navbar > .list_nav > ul > li{
+    font-size: 14px;
+}
+
+.navbar > .btn_nav > .signin_nav{
+    font-size: 14px;
+}

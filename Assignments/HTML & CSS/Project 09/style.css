@@ -140,6 +140,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 100px;
 }
 
 .game > h2{
@@ -155,19 +156,15 @@
     display: flex;
     align-items: center;
     margin-bottom: 50px;
+    gap: 50px;
 }
 
 .card_game{
-    width: 270px;
+    width: 260px;
     height: 300px;
     overflow: hidden;
     position: relative;
     left: 10px;
-}
-
-.card_image{
-    position: absolute;
-    left: -85%;
 }
 
 .img_game{
@@ -175,27 +172,237 @@
     width: 576px;
 }
 
-.blur{
-    backdrop-filter: blur(10px);
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    height: 100px;
-    width: 100%;
-}
-
 .card_info{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: absolute;
     bottom: 0;
-    background-color: rgba(255, 255, 255,0.3);
+    background-color: rgba(255, 255, 255,0.1);
     width: 100%;
     height: 25%;
+    padding: 0 15px;
 }
 
 .card_left h3{
     color: #fff;
-    
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.card_left p{
+    color: #ACACAC;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.card_btn{
+    background-color: #F4694C;
+    color: #fff;
+    border: none;
+    padding: 7px 15px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.card_image1{
+    position: absolute;
+    left: -92%;
+}
+.blur1{
+    backdrop-filter: blur(50px);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 102px;
+    width: 100%;
+}
+
+.card_image2{
+    position: absolute;
+    left: -65%;
+}
+.blur2{
+    backdrop-filter: blur(20px);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 91px;
+    width: 100%;
+}
+
+.card_image3{
+    position: absolute;
+    left: -56%;
+}
+.blur3{
+    backdrop-filter: blur(20px);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 135px;
+    width: 100%;
+}
+
+.card_image4{
+    position: absolute;
+    left: -56%;
+}
+.blur4{
+    backdrop-filter: blur(20px);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: 100%;
+}
+
+/* Game_Description */
+.game_des{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 100px 100px;
+}
+
+.game_left{
+    width: 450px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.game_right{
+    margin-left: 100px;
+}
+
+.game_des img{
+    display: block;
+    width: 650px; 
+    margin-left: -80px;  
+}
+
+.game_right h2{
+    text-transform: capitalize;
+    width: 450px;
+    font-size: 36px ;
+    font-weight: 700;
+}
+
+.game_right P{
+    font-size: 12px;
+    color: #929292;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.game_right > .game_btn > .explorenow{
+    background-color: #F4694C;
+    padding: 12px 30px;
+    border: none;
+    color: #fff;
+}
+
+.game_right > .game_btn > .learnmore{
+    background-color: transparent;
+    padding: 12px 30px;
+    border: 1px solid #F4694C;
+    color: #F4694C;
+    margin-left: 15px;
+}
+
+/* Game week */
+.week{
+    padding: 100px;
+}
+
+.week_heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.week_heading h2{
+    font-size: 38px;
+    width: 500px;
+}
+
+.week_boxarrow{
+    display: flex;
+    gap: 10px;
+}
+
+.week_boxarrow > .leftarrow{
+    width: 50px;
+    height: 50px;
+    background-color: #FDE1DB;
+}
+
+.leftarrow > img{
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+
+.week_boxarrow > .rightarrow{
+    width: 50px;
+    height: 50px;
+    background-color: #F4694C;
+}
+
+.rightarrow > img{
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+
+.week_cards{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.wcard{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.wcard_img{
+    width: 220px;
+}
+
+.wcard_heading{
+    width: 250px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.wcard_subheading{
+    font-weight: 500;
+    color: #F4694C;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.wcard_para{
+    font-size: 13px;
+    font-weight: 500;
+    color: #9E9E9E;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+.wcard_btn{
+    background-color: #F4694C;
+    border: none;
+    color: #fff;
+    padding: 15px 35px;
+    /* font-size: 14px; */
 }

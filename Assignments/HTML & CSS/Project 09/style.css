@@ -18,8 +18,6 @@
     padding: 30px 0;
 }
 
-
-
 .container > img{
     width: 100%;
     height: 100%;
@@ -494,4 +492,74 @@
     font-weight: 300;
     font-size: 14px;
     font-weight: 500;
+}
+
+/* Footer */
+.lastpage{
+    background-color: #000309;
+}
+
+/* Made with love */
+.lastpage p{
+    color: #9E9E9E;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.lastpage p span{
+    color: #9d0208;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+
+    padding: 50px 100px;
+    gap: 100px;
+}
+
+.footer_sec1 img{
+    width: 120px;
+}
+
+.footer_sec1 p{
+    font-size: 14px;
+    color: #9E9E9E;
+    margin: 10px 0;
+    line-height: 25px;
+}
+
+.footers_icon{
+    margin-top: 20px;
+}
+
+.footers_icon img:nth-child(2){
+    margin: 0 15px;
+}
+
+.footers_icon img{
+    width: 35px;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer_bold{
+    color: #fff;
+    font-size: 16px;
+}
+
+ul li{
+    color: #9E9E9E;
+    font-size: 14px;
+    padding: 7px 0;
+}
+
+/* Footer Blank */
+.footerblank{
+    height: 80px;
+    background-color: #000611;
+    border-top: 2px solid #252A34;
 }

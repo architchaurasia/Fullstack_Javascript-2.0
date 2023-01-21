@@ -265,7 +265,6 @@
 .game_des{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     padding: 100px 100px;
 }
 
@@ -404,5 +403,95 @@
     border: none;
     color: #fff;
     padding: 15px 35px;
-    /* font-size: 14px; */
+}
+
+/* Most played game */
+.mostplayed{
+    background-color: #000308;
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 850px;
+}
+
+.mostplayed h2{
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+}
+
+.mostplayed p{
+    color: #9E9E9E;
+    position: relative;
+    top: 80px;
+    left: 70px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.mostplayed_1{
+    position: relative;
+    width: 350px;
+    bottom: 50px;
+    left: -405px;
+    z-index: 1;
+}
+
+.mostplayed_2{
+    position: relative;
+    width: 300px;
+    bottom: 260px;
+    right: 20px;
+    z-index: 1;
+}
+
+.mostplayed_3{
+    position: relative;
+    width: 300px;
+    left: 320px;
+    bottom: 510px;
+    z-index: 1;
+}
+
+.mostplayed_4{
+    position: absolute;
+    margin: 280px 0 0 425px;
+    width: 920px;
+}
+
+/* Game */
+.gamer{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./Assets/Photos/Rectangle\ 606.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.gamer h2{
+    font-size: 34px;
+    text-align: center;
+}
+
+.gamer p{
+    font-size: 12px;
+    color: #9E9E9E;
+    text-align: center;
+    margin: 30px 0;
+
+}
+
+.gamer button{
+    background-color: #F4694C;
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    font-weight: 300;
+    font-size: 14px;
+    font-weight: 500;
 }

@@ -499,22 +499,9 @@
     background-color: #000309;
 }
 
-/* Made with love */
-.lastpage p{
-    color: #9E9E9E;
-    text-align: center;
-    font-size: 14px;
-    padding-bottom: 10px;
-}
-
-.lastpage p span{
-    color: #9d0208;
-}
-
 .footer{
     display: flex;
     flex-direction: row;
-
     padding: 50px 100px;
     gap: 100px;
 }
@@ -555,6 +542,27 @@ ul li{
     color: #9E9E9E;
     font-size: 14px;
     padding: 7px 0;
+}
+
+/* Made with love */
+.lastpage p{
+    color: #9E9E9E;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.lastpage p span{
+    color: #9d0208;
+}
+
+.lastpage p a{
+    text-decoration: none;
+}
+
+.lastpage p a:visited{
+    color: #9E9E9E;
+    text-decoration: none;
 }
 
 /* Footer Blank */

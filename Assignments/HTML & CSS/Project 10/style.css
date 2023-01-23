@@ -2,15 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+    font-family: 'Roboto', sans-serif;}
 
 .hero{
+    height: 846px;
+}
+
+.hero_bk{
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./Photos/mainBackground.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    height: 900px;
     background-position: 0 -55px; 
     padding: 30px 0;
+    background-color: #6663E9;
 }
 
 .navbar{
@@ -66,4 +71,67 @@ ul{
     font-weight: 500;
     color: #fff;
     font-size: 16px;
+}
+
+/* Logos */
+.logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1280px;
+    padding: 60px 50px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    top: 80px;
+    left: 40px;
+    border-radius: 20px;
+}
+
+.logos img{
+    width: 150px;
+}
+
+/* Best Estate */
+.best_estate{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F6F8FA;
+    padding-top: 100px;
+}
+
+.best_estate h2{
+    font-size: 50px;
+    font-weight: 600;
+    width: 400px;
+    text-align: center;
+    color: #27292E;
+}
+
+.estate_image{
+    width: 320px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.img_1{
+    position: relative;
+    right: 150px;
+    width: 620px;
+}
+
+.estate_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* top: 1400px;
+    left: 550px; */
+    bottom: 80px;
+    left: 30px;
+    background-color: #fff;
+    padding: 15px;    
+    width: 200px;
+    border-radius: 10px;
 }

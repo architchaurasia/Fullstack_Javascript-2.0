@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>query Selector</title>
+</head>
+<body>
+    <h1 class="heading">The heading 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facilis delectus qui alias. Voluptates totam doloribus id ut! Aliquam, unde.</p>
+
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate quam voluptatem corrupti voluptas, ullam consectetur accusantium optio omnis voluptatibus repellat laudantium odio. Cum, animi!</p>
+
+    <h1>Second heading red</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat veritatis nulla placeat sunt vitae</p>
+
+    <h2>Third heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati nemo dolor ipsa quas corporis.</p>
+
+
+    <script>
+        let a = document.querySelector("h1").style.color = "red" //h1 will turn into red (here first h1 will become red.)
+
+        let b = document.querySelectorAll("p") //It is a node list i.e array like object but not array
+        b[1].style.color = "yellow"
+        console.log(b)
+    </script>
+</body>
+</html>

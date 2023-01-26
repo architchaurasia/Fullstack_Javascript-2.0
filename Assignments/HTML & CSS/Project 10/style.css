@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;}
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #F6F8FA;
+}
 
 .hero{
     height: 846px;
@@ -96,29 +101,45 @@ ul{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #F6F8FA;
     padding-top: 100px;
 }
 
 .best_estate h2{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 600;
-    width: 400px;
+    width: 450px;
     text-align: center;
     color: #27292E;
 }
 
+.estate_1{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
 .estate_image{
-    width: 320px;
-    height: 350px;
+    width: 340px;
+    height: 370px;
     overflow: hidden;
     border-radius: 15px;
 }
 
 .img_1{
     position: relative;
-    right: 150px;
-    width: 620px;
+    right: 160px;
+    width: 660px;
+}
+
+.img_2{
+    position: relative;
+    width: 580px;
+}
+
+.img_3{
+    position: relative;
+    width: 680px;
+    right: 170px;
 }
 
 .estate_info{
@@ -126,12 +147,266 @@ ul{
     align-items: center;
     justify-content: space-between;
     position: relative;
-    /* top: 1400px;
-    left: 550px; */
-    bottom: 80px;
-    left: 30px;
+    bottom: 50px;
+    left: 15px;
     background-color: #fff;
-    padding: 15px;    
-    width: 200px;
+    padding: 15px 15px;    
+    width: 310px;
     border-radius: 10px;
+}
+
+.estate_left h3{
+    color: #434854;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.estate_left p{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #6663E9;
+}
+
+.estate_btn{
+    padding: 15px 35px;
+    border: none;
+    background-color: #6663E9;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.estate_2, .estate_3{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.estatecard_1:nth-child(2){
+    margin-top: 30px;
+}
+
+.estatecard_1:nth-child(3){
+    margin-top: 60px;
+}
+
+.img_4{
+    position: relative;
+    right: 160px;
+    width: 660px;
+}
+
+.img_5{
+    position: relative;
+    width: 660px;
+    right: 150px;
+}
+
+.img_6{
+    position: relative;
+    width: 680px;
+    right: 170px;
+}
+
+.estatecard_2:nth-child(2){
+    margin-top: 30px;
+}
+
+.estatecard_2:nth-child(1){
+    margin-top: 60px;
+}
+
+.img_7{
+    position: relative;
+    right: 160px;
+    width: 660px;
+}
+
+.img_8{
+    position: relative;
+    width: 370px;
+}
+
+.img_9{
+    position: relative;
+    width: 640px;
+    right: 230px;
+}
+
+.estatecard_3:nth-child(2){
+    margin-top: 30px;
+}
+
+.estatecard_3:nth-child(3){
+    margin-top: 60px;
+}
+
+/* Modern */
+.modern_left{
+    padding-top: 100px;
+    display: flex;
+}
+
+.modern_left1 > .feature_1{
+    width: 600px;
+}
+
+.modern_left1 > .image1{
+    width: 440px;
+    height: 400px;
+    overflow: hidden;
+    position:absolute;
+    top: 2790px;
+    left: 110px; 
+    border-radius: 50px;
+}
+
+.image1 > img{
+    position: relative;
+    width: 540px;
+    right: 80px;
+}
+
+.modern_right1{
+    margin:50px 0 0 100px;
+}
+
+.modern_right1 h2{
+    font-size: 50px;
+    font-weight: 600;
+    width: 450px;
+    color: #27292E;
+}
+
+.modern_right1 p{
+    color: #5B5F68;
+    width: 400px;
+    margin: 30px 0;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.modern_btn{
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #6663E9;
+    color: #fff;
+}
+
+/* Modern right */
+.modern_right{
+    display: flex;
+    padding-top: 100px;
+    justify-content: flex-end;
+}
+
+.modern_right2 > .feature_2{
+    width: 600px;
+}
+
+.modern_right2 > .image2{
+    width: 440px;
+    height: 400px;
+    overflow: hidden;
+    position:absolute;
+    top: 3385px;
+    right: 110px; 
+    border-radius: 50px;
+}
+
+.image2 > img{
+    position: relative;
+    width: 600px;
+    right: 92px;
+}
+
+.modern_left2{
+    margin:50px 100px 0 0;
+}
+
+.modern_left2 h2{
+    font-size: 50px;
+    font-weight: 600;
+    width: 450px;
+    color: #27292E;
+}
+
+.modern_left2 p{
+    color: #5B5F68;
+    width: 400px;
+    margin: 30px 0;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+/* Subscribe */
+.subscribe{
+    padding: 35px 80px;
+}
+
+.subscribe > .bk_purple{
+    background-color: #6663E9;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0;
+    border-radius: 50px;
+}
+
+.bk_purple h2{
+    font-size: 56px;
+    text-align: center;
+}
+
+.bk_purple p{
+    width: 550px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 25px;
+}
+
+.subscribe_box > input{
+    background:url(./Icons/mail.png);
+    background-repeat: no-repeat;
+    background-position: 21px 10px;
+    padding: 17px 40px;
+    width: 400px;
+    border: none;
+    border-radius: 50px;
+    background-color: #5654D1;
+    background-size: 28px;
+}
+
+.subscribe_box > input::placeholder{
+    color: rgb(211, 211, 211, 0.4);
+    padding-left: 22px;
+    font-size: 14px;
+}
+
+.subscribe_box button{
+    padding: 16px 40px;
+    border-radius: 50px;
+    border: none;
+    color: #6663E9;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+/* Footer */
+
+
+.footer_info{
+    display: flex;
+
+}
+
+.footer_right ul{
+    color: #434854;
 }

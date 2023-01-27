@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -20,7 +20,6 @@ body{
     height: 900px;
     background-position: 0 -55px; 
     padding: 30px 0;
-    background-color: #6663E9;
 }
 
 .navbar{
@@ -34,7 +33,7 @@ body{
     width: 130px;
 }
 
-ul{
+.hero_list{
     display: flex;
     gap: 60px;
     color: #fff;
@@ -101,15 +100,16 @@ ul{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 180px;
 }
 
 .best_estate h2{
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 600;
     width: 450px;
     text-align: center;
     color: #27292E;
+    margin-bottom: 30px;
 }
 
 .estate_1{
@@ -157,13 +157,13 @@ ul{
 
 .estate_left h3{
     color: #434854;
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 22px;
 }
 
 .estate_left p{
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 18px;
     margin-top: 10px;
     color: #6663E9;
 }
@@ -249,42 +249,43 @@ ul{
 }
 
 .modern_left1 > .feature_1{
-    width: 600px;
+    width: 630px;
 }
 
 .modern_left1 > .image1{
-    width: 440px;
-    height: 400px;
+    width: 465px;
+    height: 425px;
     overflow: hidden;
     position:absolute;
-    top: 2790px;
+    top: 2940px;
     left: 110px; 
     border-radius: 50px;
 }
 
 .image1 > img{
     position: relative;
-    width: 540px;
-    right: 80px;
+    width: 585px;
+    right: 90px;
 }
 
 .modern_right1{
-    margin:50px 0 0 100px;
+    margin:50px 0 0 150px;
 }
 
 .modern_right1 h2{
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 600;
-    width: 450px;
+    width: 500px;
     color: #27292E;
 }
 
 .modern_right1 p{
     color: #5B5F68;
-    width: 400px;
+    width: 500px;
     margin: 30px 0;
     font-weight: 500;
     line-height: 30px;
+    font-size: 16px;
 }
 
 .modern_btn{
@@ -305,31 +306,31 @@ ul{
 }
 
 .modern_right2 > .feature_2{
-    width: 600px;
+    width: 630px;
 }
 
 .modern_right2 > .image2{
-    width: 440px;
-    height: 400px;
+    width: 465px;
+    height: 425px;
     overflow: hidden;
     position:absolute;
-    top: 3385px;
-    right: 110px; 
+    top: 3560px;
+    right: 111px; 
     border-radius: 50px;
 }
 
 .image2 > img{
     position: relative;
-    width: 600px;
+    width: 635px;
     right: 92px;
 }
 
 .modern_left2{
-    margin:50px 100px 0 0;
+    margin:50px 150px 0 0;
 }
 
 .modern_left2 h2{
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 600;
     width: 450px;
     color: #27292E;
@@ -337,15 +338,16 @@ ul{
 
 .modern_left2 p{
     color: #5B5F68;
-    width: 400px;
+    width: 450px;
     margin: 30px 0;
     font-weight: 500;
     line-height: 30px;
+    font-size: 16px;
 }
 
 /* Subscribe */
 .subscribe{
-    padding: 35px 80px;
+    padding: 35px 50px;
 }
 
 .subscribe > .bk_purple{
@@ -354,8 +356,9 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
-    padding: 50px 0;
+    justify-content: center;
+    gap: 35px;
+    padding: 80px 0;
     border-radius: 50px;
 }
 
@@ -365,7 +368,7 @@ ul{
 }
 
 .bk_purple p{
-    width: 550px;
+    width: 600px;
     font-weight: 300;
     text-align: center;
     line-height: 25px;
@@ -376,7 +379,7 @@ ul{
     background-repeat: no-repeat;
     background-position: 21px 10px;
     padding: 17px 40px;
-    width: 400px;
+    width: 440px;
     border: none;
     border-radius: 50px;
     background-color: #5654D1;
@@ -404,9 +407,77 @@ ul{
 
 .footer_info{
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 95px 150px;
+}
 
+.footer_left > .footer_logo{
+    width: 160px;
+}
+
+.footer_left p{
+    font-size: 18px;
+    color: #27292E;
+    line-height: 30px;
+    margin-top: 35px;
+}
+
+.icons{
+    margin: 20px 0;
+}
+
+.icons img{
+    width: 40px;
+}
+
+.icons img:nth-child(2){
+    margin: 0 20px;
 }
 
 .footer_right ul{
-    color: #434854;
+    color: #27292E;
+}
+
+.footer_right{
+    display: flex;
+    gap: 130px;
+}
+
+.footer_right > .footer_list{
+    list-style: none;
+}
+
+
+.footer_right > .footer_list li{
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.footer_right > .footer_list li:first-child{
+    font-weight: 600;
+    font-size: 18px;
+    /* margin-bottom: 15px; */
+    margin-top: 0;
+}
+
+/* Made with love */
+.name{
+    color: #5654D1;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.name  span{
+    color: #9d0208;
+}
+
+.name a{
+    text-decoration: none;
+}
+
+.name a:visited{
+    color: #5654D1;
+    text-decoration: none;
 }

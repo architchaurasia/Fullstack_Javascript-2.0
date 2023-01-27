@@ -258,7 +258,7 @@ body{
     overflow: hidden;
     position:absolute;
     top: 2940px;
-    left: 110px; 
+    left: 112px; 
     border-radius: 50px;
 }
 
@@ -390,6 +390,10 @@ body{
     color: rgb(211, 211, 211, 0.4);
     padding-left: 22px;
     font-size: 14px;
+}
+
+.subscribe_box > input:focus{
+    outline: none;
 }
 
 .subscribe_box button{

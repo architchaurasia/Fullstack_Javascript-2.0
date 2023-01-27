@@ -474,3 +474,25 @@ li:hover{
 .footer > .footer_logo{
     width: 110px;
 }
+
+/* Made with love */
+.name{
+    color: #9E9E9E;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.name span{
+    color: #9d0208;
+}
+
+.name a{
+    text-decoration: none;
+}
+
+.name a:visited{
+    color: #9E9E9E;
+    text-decoration: none;
+}
+

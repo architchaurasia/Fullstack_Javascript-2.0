@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inner html</title>
+</head>
+<body>
+    <h1>Hello Javascript</h1>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        const list = `
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        `
+
+        const ul = document.querySelector("ul")
+        ul.innerHTML = list //We write innerhtml because we are targeting html tag
+    </script>
+</body>
+</html>

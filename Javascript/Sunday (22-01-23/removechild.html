@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove child</title>
+</head>
+<body>
+    <h1>Hello Javascript</h1>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Tailwind</li>
+        <li>Javascript</li>
+    </ul>
+
+    <p>Note: HTML removed in first</p>
+
+    <script>
+        let remove = document.querySelector("ul")
+        remove.removeChild(remove.firstElementChild)
+        //Note when it is having child node the it uses "firstChild"
+    </script>
+</body>
+</html>

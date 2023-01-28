@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solve this</title>
+</head>
+<body>
+    <h1>Solve It!</h1>
+    <button onclick="solveMath()" id="btn">Submit</button>
+    <p id="status"></p>
+
+    <script>
+        function solveMath(){
+            let value = prompt("Solve 10+15")
+            if(value == 25){
+                document.getElementById("status").innerText = "Solved"
+                document.getElementById("btn").style.backgroundColor = "green"
+            }
+            else{
+                document.getElementById("status").innerText = "Failed, Try Again!"
+                document.getElementById("btn").style.backgroundColor = "red"
+            }
+        }
+    </script>
+</body>
+</html>

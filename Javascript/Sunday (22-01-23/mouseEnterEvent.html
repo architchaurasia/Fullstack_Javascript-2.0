@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mouse over event</title>
+    <title>mouse enter event</title>
     <style>
         .box{
             width: 250px;
@@ -26,15 +26,15 @@
     </style>
 </head>
 <body>
-    <h1>Mouse Over Event</h1>
-    <div class="box">
+    <h1>Mouse Enter Event</h1>
+    <div class="box">   
         <div class="box2">
-            <p>Mouse Over Event: <span id="num">0</span></p> <!--mouse pointer enters the div element, and its child elements.-->
+            <p>Mouse Enter Event: <span id="num">0</span></p> <!--mouse pointer enters the div element.-->
         </div>
     </div>
 
     <script>
-            document.querySelector(".box").addEventListener("mouseover", hello)
+            document.querySelector(".box").addEventListener("mouseenter", hello)
             function hello(){
                 document.getElementById("num").innerHTML++;
             }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keypress event</title>
+</head>
+<body>
+    <h1>Keypress Event</h1>
+    <input id="inputtext" type="text"onkeypress="text()" placeholder="Enter some text"> <!--It trigger When we press key 
+    | it is same as keyup, key down and key press--> 
+    <p id="display"></p>
+
+    <script>
+       function text(){
+        let r = document.getElementById("inputtext").value 
+        document.getElementById("display").innerHTML = r
+        }
+    </script>
+</body>
+</html>

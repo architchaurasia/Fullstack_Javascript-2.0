@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keydown event</title>
+</head>
+<body>
+    <h1>Keydown Event</h1>
+    <input id="text" type="text" placeholder="Enter some text">
+    <p id="display"></p>
+
+    <script>
+        let input = document.getElementById("text")   
+        let result = document.getElementById("display")
+
+        input.addEventListener("keydown", function (){
+            result.innerHTML = this.value;
+        })
+    </script>
+</body>
+</html>

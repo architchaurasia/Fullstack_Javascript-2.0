@@ -16,7 +16,7 @@ console.log(`Current Year : ${todayYear}`);  //Output: 2023
 
 
 //What is the month today as a number?
-const todayMonth = date.getMonth();
+const todayMonth = date.getMonth() + 1;
 console.log(`Current Month(in number) : ${todayMonth}`);
 
 

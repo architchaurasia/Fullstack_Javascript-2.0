@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React cdn</title>
+
+    <style>
+        .header{
+            color: #184965;
+            border: 2px solid #624774;
+        }
+    </style>
+</head>
+<body>
+    <div class="root">Not Rendering</div>
+    <!-- React cdn -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!--For JSX-->
+    <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
+    <script type = "text/babel">
+        const rootElement = document.querySelector(".root");
+
+        const header = (
+            <header class = "header">
+                <h1>Hello React</h1>
+            </header>
+
+        )
+
+        const header2 = (
+            <header>
+                <h2>Here we used CDN</h2>
+            </header>
+        )
+
+        const paragraph = (
+            <para>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, accusantium.</p>
+            </para>
+        )
+
+        
+        // To include JSX element / Javascript expression inside another Element we use {}
+        const app = (
+            <div>
+                {header} {paragraph}{paragraph}
+            </div>
+        )
+
+        ReactDOM.render(app, rootElement);
+    
+    </script>
+
+</body>
+</html>

@@ -1,7 +1,4 @@
-// Data => Done
-// Variable to Store the Element => Done
-// Function to get the data from weather app
-// Manipluate the varibe of already created element
+//Current Weather Data
 
 let data;  
 
@@ -23,8 +20,9 @@ const getData = async (event) => {
   }
 
 const value = inputSearch.value;
+const apiKey = "80ea4396794046fb8b6133610231902";
 const fetchData = await fetch(
-  `https://api.weatherapi.com/v1/current.json?key=80ea4396794046fb8b6133610231902&q=${value}`
+  `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${value}`
 )
 
 const orgData = await fetchData.json();
@@ -40,6 +38,36 @@ windSpeed.innerHTML = data.current.wind_kph;
 temp.innerHTML = data.current.temp_c;
 logo.src = data.current.condition.icon;
 weatherStatus.innerHTML = data.current.condition.text;
+
+//Forecast Data
+const day = document.getElementById("fore_day");
+const icon = document.getElementById("foreImg");
+const fore_status = document.getElementById("fore_status");
+
+let days = [
+  "Sunday",
+  "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+  "Saturday"
+];
+
+console.log(days[data.forecast.forecastday[0].date.getDay()]);
+
+// let otherDayForecast = ' '
+// data.forecast.forecastday.foreach((day, index) => {
+//   if(index == 1){
+
+//   }else{
+//    otherDayForecast += `
+//    <div class="fore_card">
+//    <p id="fore_day">Friday</p>
+//    <img src="" id="foreImg" alt="icon">
+//    <p id="fore_status">__</p>
+//    </div>
+//    ` 
+//   }
+// })
+
+console.log(data.forecast.forecastday)
 
 }
 

@@ -22,7 +22,7 @@ const getData = async (event) => {
 const value = inputSearch.value;
 const apiKey = "80ea4396794046fb8b6133610231902";
 const fetchData = await fetch(
-  `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${value}`
+  `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&days=6&q=${value}`
 )
 
 const orgData = await fetchData.json();
@@ -40,34 +40,34 @@ logo.src = data.current.condition.icon;
 weatherStatus.innerHTML = data.current.condition.text;
 
 //Forecast Data
-const day = document.getElementById("fore_day");
-const icon = document.getElementById("foreImg");
-const fore_status = document.getElementById("fore_status");
 
-let days = [
-  "Sunday",
-  "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
-  "Saturday"
-];
+//ForecastImage 
 
-console.log(days[data.forecast.forecastday[0].date.getDay()]);
+const foreImg1 = document.getElementById("foreImg1");
+const foreImg2 = document.getElementById("foreImg2");
+const foreImg3 = document.getElementById("foreImg3");
+const foreImg4 = document.getElementById("foreImg4");
+const foreImg5 = document.getElementById("foreImg5");
 
-// let otherDayForecast = ' '
-// data.forecast.forecastday.foreach((day, index) => {
-//   if(index == 1){
+foreImg1.src = data.forecast.forecastday[1].day.condition.icon;
+foreImg2.src = data.forecast.forecastday[2].day.condition.icon;
+foreImg3.src = data.forecast.forecastday[3].day.condition.icon;
+foreImg4.src = data.forecast.forecastday[4].day.condition.icon;
+foreImg5.src = data.forecast.forecastday[5].day.condition.icon;
 
-//   }else{
-//    otherDayForecast += `
-//    <div class="fore_card">
-//    <p id="fore_day">Friday</p>
-//    <img src="" id="foreImg" alt="icon">
-//    <p id="fore_status">__</p>
-//    </div>
-//    ` 
-//   }
-// })
+//Forecast Status
 
-console.log(data.forecast.forecastday)
+const foreStatus1 = document.getElementById("fore_status1");
+const foreStatus2 = document.getElementById("fore_status2");
+const foreStatus3 = document.getElementById("fore_status3");
+const foreStatus4 = document.getElementById("fore_status4");
+const foreStatus5 = document.getElementById("fore_status5");
+
+foreStatus1.innerHTML = data.forecast.forecastday[1].day.condition.text;
+foreStatus2.innerHTML = data.forecast.forecastday[2].day.condition.text;
+foreStatus3.innerHTML = data.forecast.forecastday[3].day.condition.text;
+foreStatus4.innerHTML = data.forecast.forecastday[4].day.condition.text;
+foreStatus5.innerHTML = data.forecast.forecastday[5].day.condition.text;
 
 }
 

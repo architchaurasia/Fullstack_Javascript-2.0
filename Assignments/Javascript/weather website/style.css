@@ -70,7 +70,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, auto);
   margin-top: 50px;
-  column-gap: 15px;
+  column-gap: 25px;
 }
 
 .fore_card{
@@ -81,8 +81,13 @@ body {
   border: 2px solid #757575f5;
   border-radius: 10px;
   padding:  35px;
+  width: 150px;
+  height: 230px;
 }
 
+.fore_card > p{
+  text-align: center;
+}
 
 footer{
   display: flex;

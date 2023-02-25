@@ -4,6 +4,7 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 
 body {
@@ -12,34 +13,48 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: url(./src/climate-bk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fafafa;
 }
 
 /* designing the weather app container */
 .container {
   width: 600px;
-  border: 2px solid black;
+  border: 1px solid #ffffff0c;
+  backdrop-filter: blur(12px);
+  box-shadow: 5px 5px #00000013;  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 25px;
   padding: 15px;
+  border-radius: 10px;
 }
 
 /* designing the search area */
 .searchData {
-  border: 1px solid black;
+  background-color: #fafafa;
+  border-radius: 20px;
+
 }
 
 .searchData input {
-  border: transparent;
-  padding: 5px;
+  background-color: #fafafa91;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  padding: 10px;
 }
 
 .searchData button {
   border: transparent;
-  padding: 5px 15px;
+  padding: 10px 15px;
   cursor: pointer;
+  border-radius: 0 20px 20px 0px;
+  margin-right: 2px;
 }
 
 /* designing the city weather data */
@@ -68,7 +83,7 @@ body {
 
 .forecast{
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(7, auto);
   margin-top: 50px;
   column-gap: 25px;
 }
@@ -78,11 +93,13 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px 0px;
-  border: 2px solid #757575f5;
+  border: 1px solid #ffffff0c;
   border-radius: 10px;
   padding:  35px;
   width: 150px;
   height: 230px;
+  backdrop-filter: blur(12px);
+  box-shadow: 5px 5px #00000013;  
 }
 
 .fore_card > p{
@@ -90,6 +107,6 @@ body {
 }
 
 footer{
-  display: flex;
-  
+  margin-top: 50px;
 }
+

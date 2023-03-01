@@ -22,7 +22,7 @@ body {
 
 /* designing the weather app container */
 .container {
-  width: 600px;
+  width: 50%;
   border: 1px solid #ffffff0c;
   backdrop-filter: blur(12px);
   box-shadow: 5px 5px #00000013;  
@@ -96,10 +96,11 @@ body {
   border: 1px solid #ffffff0c;
   border-radius: 10px;
   padding:  35px;
-  width: 150px;
+  width: 160px;
   height: 230px;
   backdrop-filter: blur(12px);
   box-shadow: 5px 5px #00000013;  
+  color: #fafafa;
 }
 
 .fore_card > p{
@@ -107,6 +108,27 @@ body {
 }
 
 footer{
-  margin-top: 50px;
+  margin-top: 40px;
 }
+
+/* Made with love */
+.name{
+  color: #9E9E9E;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.name span{
+  color: #9d0208;
+}
+
+.name a{
+  text-decoration: none;
+}
+
+.name a:visited{
+  color: #9E9E9E;
+  text-decoration: none;
+  }
 

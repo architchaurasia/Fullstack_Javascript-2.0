@@ -77,5 +77,38 @@ foreStatus5.innerHTML = data.forecast.forecastday[5].day.condition.text;
 foreStatus6.innerHTML = data.forecast.forecastday[6].day.condition.text;
 foreStatus7.innerHTML = data.forecast.forecastday[7].day.condition.text;
 
+//Forecast Day
+const fore_day1 = document.getElementById('fore_day1');
+const fore_day2 = document.getElementById('fore_day2');
+const fore_day3 = document.getElementById('fore_day3');
+const fore_day4 = document.getElementById('fore_day4');
+const fore_day5 = document.getElementById('fore_day5');
+const fore_day6 = document.getElementById('fore_day6');
+const fore_day7 = document.getElementById('fore_day7');
+
+const data_day1 = data.forecast.forecastday[1].date;
+const data_day2 = data.forecast.forecastday[2].date;
+const data_day3 = data.forecast.forecastday[3].date;
+const data_day4 = data.forecast.forecastday[4].date;
+const data_day5 = data.forecast.forecastday[5].date;
+const data_day6 = data.forecast.forecastday[6].date;
+const data_day7 = data.forecast.forecastday[7].date;
+
+const day1= moment(data_day1).format('dddd');
+const day2= moment(data_day2).format('dddd');
+const day3= moment(data_day3).format('dddd');
+const day4= moment(data_day4).format('dddd');
+const day5= moment(data_day5).format('dddd');
+const day6= moment(data_day6).format('dddd');
+const day7= moment(data_day7).format('dddd');
+
+fore_day1.innerHTML = day1;
+fore_day2.innerHTML = day2;
+fore_day3.innerHTML = day3;
+fore_day4.innerHTML = day4;
+fore_day5.innerHTML = day5;
+fore_day6.innerHTML = day6;
+fore_day7.innerHTML = day7;
+
 }
 

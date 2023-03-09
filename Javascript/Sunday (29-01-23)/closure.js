@@ -3,9 +3,10 @@ function x(){
     function y(){
         console.log(a)
     }
-    y();
+    return y;
 }
 
-x();
+let z = x();
+z();
 
-
+console.log(z);

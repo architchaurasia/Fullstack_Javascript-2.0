@@ -8,3 +8,7 @@
 - [Flexbox & its properties](https://architwrites.hashnode.dev/flexbox-its-properties) 
 
 - [CSS Position](https://architwrites.hashnode.dev/css-position) 
+
+- [Array and its methods](https://architwrites.hashnode.dev/array-and-its-methods) 
+
+- [CSS Box Model](https://architwrites.hashnode.dev/css-box-model) 

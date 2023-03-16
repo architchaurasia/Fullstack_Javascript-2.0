@@ -1,5 +1,8 @@
 import { useState, createContext } from "react";
 import Navbar from "./Component/Navbar";
+import HeroSection from "./Component/HeroSection";
+
+export const myContext = createContext();
 
 function App() {
   const [name, setName] = useState("");
@@ -14,13 +17,14 @@ function App() {
   }
 
   return (
-    <>
+    <myContext.Provider value={{name, color}}>
      <Navbar />
      <form>
       <input type= {"text"} placeholder = "Enter User Name" value={name} onChange={myName}/>
       <input type={"text"} placeholder="Enter a Color Name" value={color} onChange={myColor}/>
      </form>
-    </>
+    <HeroSection />
+    </myContext.Provider>
   );
 }
 

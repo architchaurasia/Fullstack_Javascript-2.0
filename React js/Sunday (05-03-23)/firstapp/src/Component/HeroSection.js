@@ -1,9 +1,11 @@
 import React from 'react'
+import UserCard from './UserCard'
 
 const HeroSection = () => {
     return (
         <div>
-            <img src='https://images.pexels.com/photos/6103141/pexels-photo-6103141.jpeg' alt='Image'/>
+            <img src='https://picsum.photos/200/300'   alt='Random Image'/>
+            <UserCard />
         </div>
     )
 }

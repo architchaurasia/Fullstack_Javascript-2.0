@@ -109,6 +109,5 @@ fore_day4.innerHTML = day4;
 fore_day5.innerHTML = day5;
 fore_day6.innerHTML = day6;
 fore_day7.innerHTML = day7;
-
 }
 

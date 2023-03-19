@@ -122,7 +122,6 @@ form button{
 .footer{
     position: absolute;
     bottom: 1px;
-    left: 42%;
 }
 
 .name{
@@ -130,7 +129,7 @@ form button{
     text-align: center;
     font-size: 14px;
     padding-bottom: 10px;
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 
 .name  span{

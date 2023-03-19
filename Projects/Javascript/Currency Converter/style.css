@@ -101,7 +101,7 @@ form .drop-list{
 .drop-list .icon{
     cursor: pointer;
     font-size: 22px;
-    margin: 30px;
+    margin: 40px 30px 0;
 }
 
 form .exchange-rate{

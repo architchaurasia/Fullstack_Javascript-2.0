@@ -1,4 +1,4 @@
-# Articles Link
+# Articles Links
 #### Hashnode ID: [https://architwrites.hashnode.dev/](https://architwrites.hashnode.dev/)
 
 - [What is Web?](https://architwrites.hashnode.dev/what-is-web) 

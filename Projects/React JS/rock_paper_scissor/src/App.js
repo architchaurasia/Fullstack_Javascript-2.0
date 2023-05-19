@@ -25,37 +25,49 @@ function App() {
   };
 
   const reset = () => {
-    window.location.reload()
-  }
+    window.location.reload();
+  };
 
-  useEffect (() => {
-    const comboMoves = userChoice + computerChoice
-    if(userPoints <= 4 && computerPoints <= 4){
-      if(comboMoves === 'rockscissors' || comboMoves === 'paperrock' || comboMoves === 'scissorspaper'){
-        const updatedUserPoints = userPoints + 1
-        setUserPoints(updatedUserPoints)
-        setTurnResult('User got the point')
-        if(updatedUserPoints === 5){
-          setGameOver(true)
-          setResult('User wins')
+  useEffect(() => {
+    const comboMoves = userChoice + computerChoice;
+    if (userPoints <= 4 && computerPoints <= 4) {
+      if (
+        comboMoves === "scissorspaper" ||
+        comboMoves === "rockscissors" ||
+        comboMoves === "paperrock"
+      ) {
+        const updatedUserPoints = userPoints + 1;
+        setUserPoints(updatedUserPoints);
+        setTurnResult("User got the point");
+        if (updatedUserPoints === 5) {
+          setGameOver(true);
+          setResult("User wins");
         }
       }
 
-      if(comboMoves === 'paperscissors' || comboMoves === 'scissorsrock' || comboMoves === 'rockpaper'){
-        const updatedComputerPoints =computerPoints + 1
-        setcomputerPoints(updatedComputerPoints)
-        setTurnResult('Computer got the point')
-        if(updatedComputerPoints === 5){
-          setGameOver(true)
-          setResult('Computer wins')
+      if (
+        comboMoves === "paperscissors" ||
+        comboMoves === "scissorsrock" ||
+        comboMoves === "rockpaper"
+      ) {
+        const updatedComputerPoints = computerPoints + 1;
+        setcomputerPoints(updatedComputerPoints);
+        setTurnResult("Computer got the point");
+        if (updatedComputerPoints === 5) {
+          setGameOver(true);
+          setResult("Computer wins");
         }
       }
 
-      if(comboMoves === 'rockrock' || comboMoves === 'paperpaper' || comboMoves === 'scissorsscissors'){
-        setTurnResult('No one got a point')
+      if (
+        comboMoves === "rockrock" ||
+        comboMoves === "paperpaper" ||
+        comboMoves === "scissorsscissors"
+      ) {
+        setTurnResult("No one got a point");
       }
     }
-  }, [])
+  }, [userChoice, computerChoice]);
 
   return (
     <div className="App">
@@ -64,7 +76,7 @@ function App() {
         <h1>User Points: {userPoints}</h1>
         <h1>Computer Point: {computerPoints}</h1>
       </div>
-      <div className="choices">
+      <div className="choice">
         <div className="choice-user">
           <img
             className="user-hand"
@@ -80,12 +92,13 @@ function App() {
           />
         </div>
       </div>
-      <div children="button-div">
+      <div class="button-div">
         {choices.map((choice, index) => (
           <button
             className="button"
             key={index}
-            onclick={() => handleOnClick(choice)}
+            onClick={() => handleOnClick(choice)}
+            disabled={gameOver}
           >
             {choice}
           </button>
@@ -98,11 +111,12 @@ function App() {
       </div>
 
       <div className="button-div">
-        {gameOver}
-        <button className="button" onclick={() => reset()}>
-          {" "}
-          Restart Game?
-        </button>
+        {gameOver && (
+          <button className="button" onClick={() => reset()}>
+            {" "}
+            Restart Game?
+          </button>
+        )}
       </div>
     </div>
   );
